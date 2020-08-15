@@ -112,7 +112,7 @@ bool Adafruit_BNO055::begin(adafruit_bno055_opmode_t mode) {
 
   
   write8(BNO055_PAGE_ID_ADDR, 1);
-  #ACC_CONFIG = 0x08   16G = 0x0F   
+  /* ACC_CONFIG = 0x08   16G = 0x0F */
   write8(0x08, 0x0F);
   
   write8(BNO055_PAGE_ID_ADDR, 0);
